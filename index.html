@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PDI 2026 · Tiago Fernandes</title>
+<title>PDI</title>
 <meta name="description" content="Meu Plano de Desenvolvimento Individual: onde estou, onde quero chegar e como vou chegar lá.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,22 +125,22 @@ footer a{font-weight:600}
 <header class="hero">
   <div class="wrap">
     <div class="nav">
-      <strong>PDI 2026</strong>
+      <strong id="marca"></strong>
       <nav aria-label="Seções">
         <a href="#hoje">Onde estou</a><a href="#metas">Metas</a><a href="#caminho">Cronograma</a><a href="#estudos">Estudos</a>
       </nav>
     </div>
     <div class="hero-grid">
       <div>
-        <h1>Meu plano<span>de evolução.</span></h1>
-        <p class="lead">Seu Nome · Cargo atual. Aqui está onde estou hoje, onde quero chegar até dezembro e o que vou fazer a cada trimestre para chegar lá.</p>
+        <h1 id="titulo"></h1>
+        <p class="lead" id="apresentacao"></p>
       </div>
       <div class="portrait">
-        <img src="imagens/perfil.png" alt="Foto de Tiago" width="840" height="1050" fetchpriority="high">
+        <img id="foto" src="" alt="" width="840" height="1050" fetchpriority="high">
         <dl class="hero-meta">
-          <div><dt>Período</dt><dd>Jan a Dez 2026</dd></div>
-          <div><dt>Próximo cargo</dt><dd>Pessoa Desenvolvedora Sênior</dd></div>
-          <div><dt>Revisão com gestor</dt><dd>A cada 3 meses</dd></div>
+          <div><dt>Período</dt><dd id="periodo"></dd></div>
+          <div><dt>Próximo cargo</dt><dd id="proximoCargo"></dd></div>
+          <div><dt>Revisão com gestor</dt><dd id="revisao"></dd></div>
         </dl>
       </div>
     </div>
@@ -152,21 +152,10 @@ footer a{font-weight:600}
 <section id="hoje">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Onde estou e onde quero chegar</h2>
-      <p>Autoavaliação de 0 a 100 em cada competência. A barra azul é o nível atual, a listrada é a meta do ano e o traço marca o ponto de chegada.</p>
+      <h2 id="t-competencias"></h2>
+      <p id="d-competencias"></p>
     </div>
-    <div class="skills">
-      <div class="skill"><div><h3>Arquitetura de software</h3><small>Atual 45 → meta 75</small></div>
-        <div class="track" style="--now:45;--goal:75"><span class="goal"></span><span class="now"></span><span class="pin"></span></div></div>
-      <div class="skill"><div><h3>Liderança técnica</h3><small>Atual 35 → meta 70</small></div>
-        <div class="track" style="--now:35;--goal:70"><span class="goal"></span><span class="now"></span><span class="pin"></span></div></div>
-      <div class="skill"><div><h3>Comunicação</h3><small>Atual 60 → meta 85</small></div>
-        <div class="track" style="--now:60;--goal:85"><span class="goal"></span><span class="now"></span><span class="pin"></span></div></div>
-      <div class="skill"><div><h3>Inglês profissional</h3><small>Atual 50 → meta 80</small></div>
-        <div class="track" style="--now:50;--goal:80"><span class="goal"></span><span class="now"></span><span class="pin"></span></div></div>
-      <div class="skill"><div><h3>Cloud e DevOps</h3><small>Atual 30 → meta 60</small></div>
-        <div class="track" style="--now:30;--goal:60"><span class="goal"></span><span class="now"></span><span class="pin"></span></div></div>
-    </div>
+    <div class="skills" id="skills"></div>
     <div class="legend">
       <span style="--c:var(--cobalt)">Nível atual</span>
       <span style="--c:var(--sun)">Meta do ano</span>
@@ -177,72 +166,106 @@ footer a{font-weight:600}
 <section id="metas" class="goals-bg">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Três metas para o ano</h2>
-      <p>Cada meta tem um resultado que dá para medir. Clique para ver o plano completo.</p>
+      <h2 id="t-metas"></h2>
+      <p id="d-metas"></p>
     </div>
-    <details class="goal-item" open>
-      <summary><h3>Liderar o design de um serviço do zero</h3><span class="badge go">Em andamento</span></summary>
-      <div class="goal-body">
-        <div><b>Ação</b>Propor, documentar e conduzir a arquitetura do novo serviço de pagamentos.</div>
-        <div><b>Resultado esperado</b>Serviço em produção com ADRs publicados e revisados pelo time.</div>
-        <div><b>Prazo</b>30 de setembro de 2026</div>
-      </div>
-    </details>
-    <details class="goal-item">
-      <summary><h3>Chegar ao inglês fluente em reuniões</h3><span class="badge">Em andamento</span></summary>
-      <div class="goal-body">
-        <div><b>Ação</b>Aulas semanais de conversação e uma apresentação técnica por trimestre em inglês.</div>
-        <div><b>Resultado esperado</b>Conduzir uma reunião inteira com o time global sem apoio.</div>
-        <div><b>Prazo</b>30 de novembro de 2026</div>
-      </div>
-    </details>
-    <details class="goal-item">
-      <summary><h3>Mentorar duas pessoas júnior</h3><span class="badge ok">Concluída no 1º tri</span></summary>
-      <div class="goal-body">
-        <div><b>Ação</b>Encontros quinzenais com plano de estudos individual para cada pessoa.</div>
-        <div><b>Resultado esperado</b>Ambas entregando tarefas de média complexidade com autonomia.</div>
-        <div><b>Prazo</b>31 de março de 2026</div>
-      </div>
-    </details>
+    <div id="goals"></div>
   </div>
 </section>
 
 <section id="caminho">
   <div class="wrap">
     <div class="sec-head">
-      <h2>O caminho, trimestre a trimestre</h2>
-      <p>Cada etapa termina com uma conversa de revisão e um ajuste de rota.</p>
+      <h2 id="t-cronograma"></h2>
+      <p id="d-cronograma"></p>
     </div>
-    <ol class="timeline">
-      <li class="done"><time>Jan a Mar</time><h3>Base</h3><p>Diagnóstico de competências e início da mentoria.</p></li>
-      <li class="now"><time>Abr a Jun</time><h3>Prática</h3><p>Desenho do novo serviço e curso de arquitetura.</p></li>
-      <li><time>Jul a Set</time><h3>Entrega</h3><p>Colocar o serviço em produção e apresentar em inglês.</p></li>
-      <li><time>Out a Dez</time><h3>Consolidação</h3><p>Avaliação final e proposta de promoção.</p></li>
-    </ol>
+    <ol class="timeline" id="timeline"></ol>
   </div>
 </section>
 
 <section id="estudos" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
-      <h2>O que vou estudar</h2>
-      <p>Recursos escolhidos para fechar as lacunas das competências acima.</p>
+      <h2 id="t-estudos"></h2>
+      <p id="d-estudos"></p>
     </div>
-    <div class="learn">
-      <article><h3>Livros</h3><ul><li>Designing Data-Intensive Applications</li><li>The Staff Engineer's Path</li><li>Team Topologies</li></ul></article>
-      <article><h3>Cursos</h3><ul><li>Arquitetura de software (trilha da empresa)</li><li>AWS Solutions Architect</li><li>Inglês para negócios</li></ul></article>
-      <article><h3>Prática</h3><ul><li>Escrever um ADR por mês</li><li>Palestra interna a cada trimestre</li><li>Contribuir com um projeto open source</li></ul></article>
-    </div>
+    <div class="learn" id="learn"></div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <h2>Vamos conversar?</h2>
-    <p>Quer dar feedback ou trocar ideias sobre o plano? Fale comigo pelo <a href="https://github.com/seu-usuario">GitHub</a> ou pelo <a href="https://linkedin.com/in/seu-usuario">LinkedIn</a>.</p>
+    <h2 id="rodape-titulo"></h2>
+    <p id="rodape-texto"></p>
   </div>
 </footer>
 
+<script src="dados.js"></script>
+<script>
+(function(){
+  var D=window.PDI;
+  if(!D){document.querySelector('main').innerHTML='<div class="wrap" style="padding:4rem 0"><h2>Não achei o dados.js</h2><p>Confira se o arquivo dados.js está na mesma pasta do index.html.</p></div>';return;}
+  var $=function(id){return document.getElementById(id)};
+  var el=function(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e};
+  var safe=function(u){return /^(https?:|mailto:)/i.test(u)?u:'#'};
+
+  var P=D.perfil;
+  document.title='PDI '+P.ano+' · '+P.nome;
+  $('marca').textContent='PDI '+P.ano;
+  var h1=$('titulo');h1.append(P.tituloLinha1);h1.appendChild(el('span',null,P.tituloLinha2));
+  $('apresentacao').textContent=P.apresentacao;
+  $('foto').src=P.foto;$('foto').alt=P.fotoAlt||P.nome;
+  $('periodo').textContent=P.periodo;
+  $('proximoCargo').textContent=P.proximoCargo;
+  $('revisao').textContent=P.revisao;
+
+  [['competencias'],['metas'],['cronograma'],['estudos']].forEach(function(k){
+    $('t-'+k[0]).textContent=D[k[0]].titulo;
+    $('d-'+k[0]).textContent=D[k[0]].descricao;
+  });
+
+  D.competencias.itens.forEach(function(c){
+    var row=el('div','skill'),l=el('div');
+    l.appendChild(el('h3',null,c.nome));
+    l.appendChild(el('small',null,'Atual '+c.atual+' → meta '+c.meta));
+    var t=el('div','track');t.style.setProperty('--now',c.atual);t.style.setProperty('--goal',c.meta);
+    t.append(el('span','goal'),el('span','now'),el('span','pin'));
+    row.append(l,t);$('skills').appendChild(row);
+  });
+
+  D.metas.itens.forEach(function(m){
+    var d=el('details','goal-item');if(m.aberta)d.open=true;
+    var sm=el('summary');sm.appendChild(el('h3',null,m.titulo));
+    var b=el('span','badge'+(m.situacao==='andamento'?' go':m.situacao==='concluida'?' ok':''),m.status);
+    sm.appendChild(b);
+    var body=el('div','goal-body');
+    [['Ação',m.acao],['Resultado esperado',m.resultado],['Prazo',m.prazo]].forEach(function(f){
+      var x=el('div');x.appendChild(el('b',null,f[0]));x.append(f[1]);body.appendChild(x);
+    });
+    d.append(sm,body);$('goals').appendChild(d);
+  });
+
+  D.cronograma.itens.forEach(function(c){
+    var li=el('li',c.fase==='feito'?'done':c.fase==='atual'?'now':'');
+    li.append(el('time',null,c.periodo),el('h3',null,c.titulo),el('p',null,c.texto));
+    $('timeline').appendChild(li);
+  });
+
+  D.estudos.grupos.forEach(function(g){
+    var a=el('article');a.appendChild(el('h3',null,g.titulo));
+    var ul=el('ul');g.itens.forEach(function(i){ul.appendChild(el('li',null,i))});
+    a.appendChild(ul);$('learn').appendChild(a);
+  });
+
+  var R=D.rodape;
+  $('rodape-titulo').textContent=R.titulo;
+  var rt=$('rodape-texto');rt.append(R.texto+' ');
+  R.links.forEach(function(l,i){
+    var a=el('a',null,l.nome);a.href=safe(l.url);a.target='_blank';a.rel='noopener';
+    rt.appendChild(a);if(i<R.links.length-1)rt.append(' · ');
+  });
+})();
+</script>
 </body>
 </html>
