@@ -26,7 +26,8 @@ Bem-vindo ao meu PDI. Este repositório tem como objetivo documentar e rastrear 
 
 ### 3. Metas Pessoais (Saúde e Equilíbrio)
 *Acredito que o alto desempenho profissional está diretamente ligado ao bem-estar físico e mental.*
-* **Esporte:** Treinamento de corrida e fortalecimento (Meta: Concluir uma meia maratona de 21km).
+* **Saude:** Reeducação alimentar (Meta: Perder 20 kilos).| Diário | 🔄 Em andamento | ⏳ Falta apenas 2 kilos
+* **Saude:** Treino fisico em academia. | Diário | 🔄 Em andamento | com pontos a melhorar.
 * **Hobbies:** Projetos de maker/impressão 3D e mecânica automotiva para estimular a criatividade fora das telas.
 
 ---
