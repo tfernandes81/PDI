@@ -3,11 +3,11 @@
 Este plano está dividido em módulos progressivos, indo da fundação teórica até a automação avançada e visão de liderança.
 
 #### Módulo 1: Fundamentos e Cultura SRE
-- [ ] Ler a Parte II e III do *SRE Book* do Google (SLIs, SLOs, SLAs e Error Budgets).
-- [ ] Mapear as jornadas críticas do usuário nos sistemas atuais.
-- [ ] Definir SLIs (Service Level Indicators) fáceis de medir para pelo menos um serviço crítico.
-- [ ] Estabelecer SLOs (Service Level Objectives) alinhados com a expectativa do negócio.
-- [ ] Configurar uma política de Error Budget (o que acontece quando o orçamento de erros acaba?).
+- [x] Ler a Parte II e III do *SRE Book* do Google (SLIs, SLOs, SLAs e Error Budgets).
+- [x] Mapear as jornadas críticas do usuário nos sistemas atuais.
+- [x] Definir SLIs (Service Level Indicators) fáceis de medir para pelo menos um serviço crítico.
+- [x] Estabelecer SLOs (Service Level Objectives) alinhados com a expectativa do negócio.
+- [x] Configurar uma política de Error Budget (o que acontece quando o orçamento de erros acaba?).
 
 #### Módulo 2: Observabilidade na Prática (Datadog & FullStory)
 - [ ] **Métricas:** Criar dashboards no Datadog focados nos "Quatro Sinais de Ouro" (Latência, Tráfego, Erros e Saturação).
