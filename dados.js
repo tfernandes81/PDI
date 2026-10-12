@@ -16,13 +16,13 @@ window.PDI = {
   perfil: {
     nome: "Tiago Fernandes",
     ano: 2026,
-    foto: "imagens/tiago.jpg",
+    foto: "imagens/perfil.png",
     fotoAlt: "Foto de Tiago Fernandes",
     tituloLinha1: "Meu plano",
     tituloLinha2: "de evolução.",
-    apresentacao: "Tiago Fernandes · Cargo atual. Aqui está onde estou hoje, onde quero chegar até dezembro e o que vou fazer a cada trimestre para chegar lá.",
+    apresentacao: "Tiago Fernandes · TechLead. Aqui está onde estou hoje, onde quero chegar até dezembro e o que vou fazer a cada trimestre para chegar lá.",
     periodo: "Jan a Dez 2026",
-    proximoCargo: "Pessoa Desenvolvedora Sênior",
+    proximoCargo: "Coordenador",
     revisao: "A cada 3 meses"
   },
 
@@ -31,11 +31,11 @@ window.PDI = {
     titulo: "Onde estou e onde quero chegar",
     descricao: "Autoavaliação de 0 a 100 em cada competência. A barra azul é o nível atual, a listrada é a meta do ano e o traço marca o ponto de chegada.",
     itens: [
-      { nome: "Arquitetura de software", atual: 45, meta: 75 },
-      { nome: "Liderança técnica",       atual: 35, meta: 70 },
+      { nome: "SRE",                     atual: 80, meta: 90 },
+      { nome: "Liderança técnica",       atual: 55, meta: 70 },
       { nome: "Comunicação",             atual: 60, meta: 85 },
-      { nome: "Inglês profissional",     atual: 50, meta: 80 },
-      { nome: "Cloud e DevOps",          atual: 30, meta: 60 }
+      { nome: "Dados",                   atual: 50, meta: 80 },
+      { nome: "Arquitetura",             atual: 40, meta: 60 }
     ]
   },
 
